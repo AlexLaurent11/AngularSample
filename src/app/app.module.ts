@@ -7,22 +7,28 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ListComponent } from './list/list.component';
+import { CommentsComponent } from './comments/comments.component'
 
 import { ListService } from './list.service'
+import { CommentsService } from './comments.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ListComponent
+    ListComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [ListService],
+  providers: [
+    ListService,
+    CommentsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

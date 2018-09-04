@@ -1,7 +1,11 @@
-<p>
-  list works!
-</p>
+<div class="page-header">
+  <h1>Posts <small>Linked to comments (soon)</small></h1>
+</div>
 
-<ul>
-  <li *ngFor="let post of listData">{{post.title}}</li>
-</ul>
+<div class="list-group" *ngFor="let post of listData">
+  <div class="list-group-item" id={{post.id}}>
+    <h4 class="list-group-item-heading">{{post.title}}</h4>
+    <p class="list-group-item-text">{{post.body}}</p>
+    <a target="_self" routerLink="../comments"> Comments>> </a>
+  </div>
+</div>

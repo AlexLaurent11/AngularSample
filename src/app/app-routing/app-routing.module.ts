@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from "../login/login.component";
 import { RegisterComponent } from "../register/register.component";
 import { ListComponent } from '../list/list.component';
+import { CommentsComponent } from '../comments/comments.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +20,11 @@ const appRoutes: Routes = [
     path: "list",
     component: ListComponent,
     data: { title: 'List' }
+  },
+  {
+    path: "comments",
+    component: CommentsComponent,
+    data: { title: 'Comments' }
   },
   {
     path: "",
