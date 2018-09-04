@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListService } from '../list.service'
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  private listData: any;
+
+  constructor(private svc: ListService) { }
 
   ngOnInit() {
+    this.svc.getList().subscribe(data => {
+      this.listData = data;
+    });
   }
 
 }
