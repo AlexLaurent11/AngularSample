@@ -22,7 +22,7 @@ const appRoutes: Routes = [
     data: { title: 'List' }
   },
   {
-    path: "comments",
+    path: "comments/:id",
     component: CommentsComponent,
     data: { title: 'Comments' }
   },

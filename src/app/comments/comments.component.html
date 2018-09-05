@@ -3,9 +3,9 @@
 </div>
 
 <div class="list-group" *ngFor="let comment of commentsData">
-  <div class="list-group-item" *ngIf="comment.postId == 1" id={{comment.id}}>
+  <div class="list-group-item" id={{comment.id}}>
     <h5 class="list-group-item-heading">{{comment.name}}</h5>
     {{comment.body}}
   </div>
 </div>
-<a target="_self" routerLink="../list"> <<back </a>
+<a target="_self" routerLink="../../list"> <<back </a>
