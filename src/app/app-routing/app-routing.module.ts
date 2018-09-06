@@ -4,6 +4,7 @@ import { LoginComponent } from "../login/login.component";
 import { RegisterComponent } from "../register/register.component";
 import { ListComponent } from '../list/list.component';
 import { CommentsComponent } from '../comments/comments.component';
+import { PhotosComponent } from '../photos/photos.component';
 
 const appRoutes: Routes = [
   {
@@ -25,6 +26,11 @@ const appRoutes: Routes = [
     path: "comments/:id",
     component: CommentsComponent,
     data: { title: 'Comments' }
+  },
+  {
+    path: "photos",
+    component: PhotosComponent,
+    data: { title: 'Photos' }
   },
   {
     path: "",

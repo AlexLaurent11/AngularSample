@@ -8,9 +8,11 @@ import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ListComponent } from './list/list.component';
 import { CommentsComponent } from './comments/comments.component'
+import { PhotosComponent } from './photos/photos.component';
 
 import { ListService } from './list.service'
 import { CommentsService } from './comments.service';
+import { PhotosService } from './photos.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { CommentsService } from './comments.service';
     LoginComponent,
     RegisterComponent,
     ListComponent,
-    CommentsComponent
+    CommentsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { CommentsService } from './comments.service';
   ],
   providers: [
     ListService,
-    CommentsService
+    CommentsService,
+    PhotosService
   ],
   bootstrap: [AppComponent]
 })

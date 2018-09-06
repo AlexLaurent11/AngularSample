@@ -1,6 +1,20 @@
-<div class="page-header">
-  <h1>Comments <small>For an Unlinked post</small></h1>
-</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="position: relative">
+    <a class="navbar-brand" href="#">Cool App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_self" routerLink="../../photos">Photos</a>
+        </li>
+      </ul>
+      <button class="btn btn-outline-success my-2 my-sm-0"  target="_self" routerLink="../../login">Icon Placeholder</button>
+    </div>
+  </nav>
 
 <div class="list-group" *ngFor="let comment of commentsData">
   <div class="list-group-item" id={{comment.id}}>

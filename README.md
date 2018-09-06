@@ -8,7 +8,7 @@ Bootstrap styling is used throughout the app as well as some minor customization
 
 Data for this app is dummy data pulled from an open API.  The locaion of the host site is https://jsonplaceholder.typicode.com/
 
-#Installation
+# Installation
 
 To install, simply run 'npm install' on the root directory
 
