@@ -15,3 +15,12 @@ To install, simply run 'npm install' on the root directory
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+# Future PLans For this app
+
+- Authentication and validation on login screen
+- Associated back end and API for profiles
+- Icons
+- A new API for posts and comments
+- Allowing users to make posts, and to comment on posts
+- Allow users to upload their own photos, and associate those photos with a specific user.
